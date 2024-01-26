@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Github hosting</title>
+        <style>            
+            .thumbnails{
+            height: 300px;
+            border-radius: 12px;
+            }
+            .video-info-grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            }   
+
+            .video-preview{
+            cursor: pointer;
+            position: relative;
+            }
+
+            .video-preview .tooltip{
+            position: absolute;
+            background-color: rgba(100, 100, 100,0.9);
+            color: white;
+            padding: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            top:40%;
+            left: 50%;
+            border-radius: 4px;
+            font-size: 18px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.15s;
+            white-space: nowrap;
+            }
+            .video-preview:hover .tooltip {
+            opacity: 1;
+            }
+
+            .video-title{
+            margin-top: 0;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 10px;
+            }
+
+            .profile-picture{
+            width: 36px;
+            border-radius: 50px;
+            }
+
+            .thumbnail-row{
+            
+            margin-bottom: 8px;
+            position: relative;
+            }
+
+            .video-state,
+            .video-author{
+            color: rgb(96, 96, 96);
+            font-size: 12px; 
+            }
+
+            .video-author{
+            margin-bottom: 4px;
+            }
+
+            .video-flex{
+            padding-top: 150px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            }
+
+            .video-time{
+            background-color: black;
+            color: white;
+            position: absolute;
+            bottom: 10px;
+            right: 8px;
+
+            font-size: 12px;
+
+            border-radius: 3px;
+
+            padding: 4px 2px;
+            }
+
+
+
+        </style>
+    </head>
+    <body style="
+          font-family: Arial;
+          ">
+
+        <div class="video-flex">
+    
+            <div class="video-preview" onclick="location.href='https://youtu.be/4xnsmyI5KMQ?si=vNOWNMvfBscu3Go8';" >
+                  <div class="thumbnail-row">
+                      <img class="thumbnails" src="images/thumbnail-picture.jpg">
+                      <div class="video-time">21:00</div>
+                  </div>
+    
+                  <div class="video-info-grid">
+    
+                    <div class="chanel-picture">
+                      <img class="profile-picture" src="images/profile-picture.jpg">
+                    </div>
+                  <div class="video-info">
+                      <p class="video-title">
+                        Static Website hosting on github for CS369!!
+                      </p>
+                      <p class="video-author">
+                        Chanon Sritulakan
+                      </p>
+                      <p class="video-state">
+                        3.4M views · 1 months ago 
+                      </p>
+                    </div>
+                
+                  </div> 
+                  <div class="tooltip">6409682645</div>
+            </div>
+           
+        </div>
+    </body>
+</html>
